@@ -5,69 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Universitas Teknologi Digital</title>
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: sans-serif;
-      margin: 0;
-      background-color: #f4f9ff;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
     }
     header {
-      background-color: #0070c0;
-      color: white;
+      background-color: #0d47a1;
       padding: 10px 20px;
+      color: white;
+    }
+    .logo-container {
       display: flex;
       align-items: center;
-      justify-content: space-between;
     }
-    header h1 {
-      margin: 0;
-      font-size: 20px;
+    .logo {
+      height: 60px;
+      margin-right: 15px;
+    }
+    .site-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #1565c0;
+      padding: 10px 20px;
     }
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 15px;
+      margin-right: 20px;
       font-weight: bold;
     }
     main {
-      padding: 30px 20px;
-      text-align: center;
-    }
-    footer {
-      background-color: #0070c0;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-    img.logo {
-      height: 40px;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div>
+  <header class="header">
+    <div class="logo-container">
       <img src="logo.png" alt="Logo Kampus" class="logo" />
-      <h1>Universitas Teknologi Digital</h1>
+      <h1 class="site-title">Universitas Teknologi Digital</h1>
     </div>
-    <nav>
-      <a href="index.html">Beranda</a>
-      <a href="tentang.html">Tentang</a>
-      <a href="program.html">Program Studi</a>
-      <a href="berita.html">Berita</a>
-      <a href="kontak.html">Kontak</a>
-    </nav>
   </header>
-
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Tentang</a>
+    <a href="#">Program Studi</a>
+    <a href="#">Berita</a>
+    <a href="#">Kontak</a>
+  </nav>
   <main>
     <h2>Selamat Datang di Universitas Teknologi Digital</h2>
-    <p>Gerbang Peradaban Digital</p>
+    <p>Website resmi kampus modern berbasis teknologi dan inovasi.</p>
   </main>
-
-  <footer>
-    &copy; 2025 Universitas Teknologi Digital. Hak Cipta Dilindungi.
-  </footer>
 </body>
 </html>
