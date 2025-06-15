@@ -47,9 +47,9 @@
     }
 
     .container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .song {
@@ -58,6 +58,11 @@
       border-radius: 10px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       width: 300px;
+      margin-bottom: 15px;
+    }
+
+    .hidden {
+      display: none;
     }
 
     .song-title {
@@ -94,7 +99,7 @@
 
   <main>
     <div class="container">
-      <!-- Enam lagu seperti sebelumnya -->
+      <!-- Tampilkan lagu ini -->
       <div class="song">
         <div class="song-title">For The Love Of God</div>
         <div class="artist">Penyanyi: Steve Vai</div>
@@ -103,7 +108,9 @@
           Browser Anda tidak mendukung audio.
         </audio>
       </div>
-      <div class="song">
+
+      <!-- Lagu-lagu lain tetap ada, tapi disembunyikan -->
+      <div class="song hidden">
         <div class="song-title">Black Star (Live)</div>
         <div class="artist">Penyanyi: Yngwie Malmsteen</div>
         <audio controls>
@@ -111,7 +118,8 @@
           Browser Anda tidak mendukung audio.
         </audio>
       </div>
-      <div class="song">
+
+      <div class="song hidden">
         <div class="song-title">Cliffs of Dover</div>
         <div class="artist">Penyanyi: Eric Johnson</div>
         <audio controls>
@@ -119,27 +127,12 @@
           Browser Anda tidak mendukung audio.
         </audio>
       </div>
-      <div class="song">
+
+      <div class="song hidden">
         <div class="song-title">Canon Rock</div>
         <div class="artist">Penyanyi: JerryC</div>
         <audio controls>
           <source src="musik/jerryc.mp3" type="audio/mpeg">
-          Browser Anda tidak mendukung audio.
-        </audio>
-      </div>
-      <div class="song">
-        <div class="song-title">Eruption</div>
-        <div class="artist">Penyanyi: Van Halen</div>
-        <audio controls>
-          <source src="musik/vanhalen.mp3" type="audio/mpeg">
-          Browser Anda tidak mendukung audio.
-        </audio>
-      </div>
-      <div class="song">
-        <div class="song-title">Satch Boogie</div>
-        <div class="artist">Penyanyi: Joe Satriani</div>
-        <audio controls>
-          <source src="musik/satriani.mp3" type="audio/mpeg">
           Browser Anda tidak mendukung audio.
         </audio>
       </div>
