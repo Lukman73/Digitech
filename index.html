@@ -8,8 +8,15 @@
     html, body {
       margin: 0;
       padding: 0;
+      height: 100%;
       font-family: Arial, sans-serif;
       background: #f0f0f5;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
@@ -19,12 +26,16 @@
       text-align: center;
     }
 
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
     .container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
-      max-width: 700px;
-      margin: 20px auto;
     }
 
     .song {
@@ -32,6 +43,7 @@
       padding: 10px;
       border-radius: 10px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      width: 300px;
     }
 
     .song-title {
@@ -54,8 +66,8 @@
       background-color: #0044cc;
       color: white;
       text-align: center;
-      padding: 10px;
-      margin-top: 30px;
+      padding: 15px;
+      margin-top: auto;
     }
   </style>
 </head>
@@ -65,25 +77,63 @@
     <h1>Koleksi Musik Favorit</h1>
   </header>
 
-  <div class="container">
-    <div class="song">
-      <div class="song-title">For The Love Of God</div>
-      <div class="artist">Penyanyi: Steve Vai</div>
-      <audio controls>
-        <source src="musik/steve.mp3" type="audio/mpeg">
-        Browser Anda tidak mendukung audio.
-      </audio>
-    </div>
+  <main>
+    <div class="container">
+      <div class="song">
+        <div class="song-title">For The Love Of God</div>
+        <div class="artist">Penyanyi: Steve Vai</div>
+        <audio controls>
+          <source src="musik/steve.mp3" type="audio/mpeg">
+          Browser Anda tidak mendukung audio.
+        </audio>
+      </div>
 
-    <div class="song">
-      <div class="song-title">Black Star (Live)</div>
-      <div class="artist">Penyanyi: Yngwie Malmsteen</div>
-      <audio controls>
-        <source src="musik/yngwie.mp3" type="audio/mpeg">
-        Browser Anda tidak mendukung audio.
-      </audio>
+      <div class="song">
+        <div class="song-title">Black Star (Live)</div>
+        <div class="artist">Penyanyi: Yngwie Malmsteen</div>
+        <audio controls>
+          <source src="musik/yngwie.mp3" type="audio/mpeg">
+          Browser Anda tidak mendukung audio.
+        </audio>
+      </div>
+
+      <div class="song">
+        <div class="song-title">Cliffs of Dover</div>
+        <div class="artist">Penyanyi: Eric Johnson</div>
+        <audio controls>
+          <source src="musik/eric.mp3" type="audio/mpeg">
+          Browser Anda tidak mendukung audio.
+        </audio>
+      </div>
+
+      <div class="song">
+        <div class="song-title">Canon Rock</div>
+        <div class="artist">Penyanyi: JerryC</div>
+        <audio controls>
+          <source src="musik/jerryc.mp3" type="audio/mpeg">
+          Browser Anda tidak mendukung audio.
+        </audio>
+      </div>
+
+      <div class="song">
+        <div class="song-title">Eruption</div>
+        <div class="artist">Penyanyi: Van Halen</div>
+        <audio controls>
+          <source src="musik/vanhalen.mp3" type="audio/mpeg">
+          Browser Anda tidak mendukung audio.
+        </audio>
+      </div>
+
+      <div class="song">
+        <div class="song-title">Satch Boogie</div>
+        <div class="artist">Penyanyi: Joe Satriani</div>
+        <audio controls>
+          <source src="musik/satriani.mp3" type="audio/mpeg">
+          Browser Anda tidak mendukung audio.
+        </audio>
+      </div>
     </div>
-  </div>
+  </main>
 
   <footer>
     Hak Cipta © 2025 Koleksi Musik Favorit
