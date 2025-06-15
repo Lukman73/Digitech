@@ -6,8 +6,9 @@
   <title>Koleksi Musik Favorit</title>
   <style>
     html, body {
-      height: 100%;
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: Arial, sans-serif;
       background: #f0f0f5;
     }
@@ -15,6 +16,7 @@
     body {
       display: flex;
       flex-direction: column;
+      min-height: 100vh; /* agar footer selalu di bawah */
     }
 
     header {
@@ -28,7 +30,7 @@
       flex: 1;
       padding: 20px;
       max-width: 800px;
-      margin: auto;
+      margin: 0 auto;
       width: 100%;
     }
 
@@ -70,7 +72,6 @@
   </header>
 
   <div class="container">
-    
     <div class="song">
       <div class="song-title">For The Love Of God</div>
       <div class="artist">Penyanyi: Steve Vai</div>
@@ -88,7 +89,6 @@
         Browser Anda tidak mendukung audio.
       </audio>
     </div>
-    
   </div>
 
   <footer>
