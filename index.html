@@ -22,8 +22,22 @@
     header {
       background-color: #0044cc;
       color: white;
-      padding: 20px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 20px;
+      position: relative;
+    }
+
+    header img {
+      position: absolute;
+      left: 20px;
+      height: 40px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
     }
 
     main {
@@ -74,11 +88,13 @@
 <body>
 
   <header>
+    <img src="logo.png" alt="Logo">
     <h1>Koleksi Musik Favorit</h1>
   </header>
 
   <main>
     <div class="container">
+      <!-- Enam lagu seperti sebelumnya -->
       <div class="song">
         <div class="song-title">For The Love Of God</div>
         <div class="artist">Penyanyi: Steve Vai</div>
@@ -87,7 +103,6 @@
           Browser Anda tidak mendukung audio.
         </audio>
       </div>
-
       <div class="song">
         <div class="song-title">Black Star (Live)</div>
         <div class="artist">Penyanyi: Yngwie Malmsteen</div>
@@ -96,7 +111,6 @@
           Browser Anda tidak mendukung audio.
         </audio>
       </div>
-
       <div class="song">
         <div class="song-title">Cliffs of Dover</div>
         <div class="artist">Penyanyi: Eric Johnson</div>
@@ -105,7 +119,6 @@
           Browser Anda tidak mendukung audio.
         </audio>
       </div>
-
       <div class="song">
         <div class="song-title">Canon Rock</div>
         <div class="artist">Penyanyi: JerryC</div>
@@ -114,7 +127,6 @@
           Browser Anda tidak mendukung audio.
         </audio>
       </div>
-
       <div class="song">
         <div class="song-title">Eruption</div>
         <div class="artist">Penyanyi: Van Halen</div>
@@ -123,7 +135,6 @@
           Browser Anda tidak mendukung audio.
         </audio>
       </div>
-
       <div class="song">
         <div class="song-title">Satch Boogie</div>
         <div class="artist">Penyanyi: Joe Satriani</div>
